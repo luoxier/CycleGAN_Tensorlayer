@@ -9,9 +9,9 @@ TensorFlow
 Python
 
 Theory:
-![image](https://github.com/luoxier/CycleGAN_Tensorlayer/master/figures/generator.png)
-![image](https://github.com/luoxier/CycleGAN_Tensorlayer/master/figures/discriminator.png)
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/generator.png)
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png)
 
 Results:
-![image](https://github.com/luoxier/CycleGAN_Tensorlayer/master/figures/result.png)
-![image](https://github.com/luoxier/CycleGAN_Tensorlayer/master/figures/result2.png)
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result.png)
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result2.png)
