@@ -14,7 +14,7 @@ Re-implement CycleGAN in Tensorlayer
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/generator.png "generator")  
 
-![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png "discriminatoe")  
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png "discriminator")  
 
 #### Results:
 
