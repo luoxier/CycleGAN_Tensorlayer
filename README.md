@@ -2,28 +2,28 @@
 Re-implement CycleGAN in Tensorlayer
 
 
-<\br>
-####Prerequisites:
-<\br>
+
+#### Prerequisites:
+
 * Tensorlayer
 * TensorFlow
 * Python
 
 
-####Theory:
-<\br>
-![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/generator.png)
-<\br>
-![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png)
+#### Theory:
 
-####Results:
-<\br>
-![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result.png)
-<\br>
-![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result2.png)
-<\br>
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/generator.png "generator")  
 
-####Reference:
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png "discriminatoe")  
+
+#### Results:
+
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result.png)  
+
+![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result2.png)  
+
+
+#### Reference:
 
 * Original Paper:[Markdown](https://arxiv.org/pdf/1703.10593.pdf)
 * Original implement in Torch:[Markdown](https://github.com/junyanz/CycleGAN/)
