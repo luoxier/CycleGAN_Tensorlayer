@@ -36,15 +36,15 @@ The discriminator process:
 
 
 
-## data augmentation:
+#### data augmentation:
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/data_augmentation.png) 
 
 
-## Instance normalization（comparision by original paper https://arxiv.org/abs/1607.08022）:
+#### Instance normalization（comparision by original paper https://arxiv.org/abs/1607.08022）:
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/instance_norm.png) 
 
 
-## Resize convolution (Remove Checkerboard Artifacts):
+#### Resize convolution (Remove Checkerboard Artifacts):
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/compare1.png) 
 
