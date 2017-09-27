@@ -3,19 +3,21 @@ Re-implement CycleGAN in Tensorlayer
 
 
 
-#### Prerequisites:
+### Prerequisites:
 
 * Tensorlayer
 * TensorFlow
 * Python
 
-#### Run:
+### Run:
+```Bash
 CUDA_VISIBLE_DEVICES=0 python main.py 
+```
 
 (if datasets are collected by yourself, you can use dataset_clean.py or dataset_crop.py to pre-process images)
 
 
-#### Theory:
+### Theory:
 
 The generator process:
 
@@ -25,25 +27,25 @@ The discriminator process:
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/discriminator.png "discriminator")  
 
-#### Results:
+### Results:
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result.png)  
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/result2.png)  
 
-#### Artifacts Remove
+### Checkerboard Artifacts Remove
 
-Using model_deconv:
+Using model_deconv and Using model_upsampling: :
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/compare1.png) 
 
-Using model_upsampling:
+
 
 ![Image text](https://github.com/luoxier/CycleGAN_Tensorlayer/blob/master/figures/compare2.png) 
 
 
 
-#### Reference:
+### Reference:
 
 * Original Paper: https://arxiv.org/pdf/1703.10593.pdf
 * Original implement in Torch: https://github.com/junyanz/CycleGAN/
