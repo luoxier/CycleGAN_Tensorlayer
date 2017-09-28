@@ -3,13 +3,11 @@ import pprint
 import numpy as np
 import tensorflow as tf
 import tensorlayer as tl
-from glob import glob
 from tensorlayer.layers import *
 from tensorlayer.prepro import *
 from random import shuffle
 from model_upsampling import *
-from utils import *
-from image_pool import *
+
 import argparse
 from collections import namedtuple
 
