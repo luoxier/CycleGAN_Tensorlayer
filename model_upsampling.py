@@ -74,10 +74,11 @@ def cyclegan_discriminator_patch(inputs, is_train=True, reuse=False, name='discr
     lrelu = lambda x: tl.act.lrelu(x, 0.2)
     with tf.variable_scope(name, reuse=reuse):
         tl.layers.set_name_reuse(reuse)
-        net_in = InputLayer(inputs, name='d/in')
+
         patch_inputs = tf.random_crop(inputs, [1, 70, 70, 3])
+        net_in = InputLayer(patch_inputs, name='d/in')
         # 1st
-        net_h0 = Conv2d(patch_inputs, df_dim, (4, 4), (2, 2), act=lrelu,
+        net_h0 = Conv2d(net_in, df_dim, (4, 4), (2, 2), act=lrelu,
                         padding='SAME', W_init=w_init, name='d/h0/conv2d')  # C64
         net_h1 = Conv2d(net_h0, df_dim * 2, (4, 4), (2, 2), act=None,
                         padding='SAME', W_init=w_init, name='d/h1/conv2d')
