@@ -43,7 +43,7 @@ def cyclegan_generator_resnet(image, num=9, is_train=True, reuse=False, batch_si
 
         net_r9 = n
         # net_d1 = DeConv2d(net_r9, gf_dim * 2, (3, 3), out_size=(128,128),
-        #     strides=(2, 2), padding='SAME', batch_size=batch_size, act=None, name='u64')  # 
+        #     strides=(2, 2), padding='SAME', batch_size=batch_size, act=None, name='u64')  #
 
         size_d1 = net_r9.outputs.get_shape().as_list()
         net_up1 = UpSampling2dLayer(net_r9, size=[size_d1[1] * 2, size_d1[2] * 2], is_scale=False, method=1,
@@ -75,8 +75,8 @@ def cyclegan_discriminator_patch(inputs, is_train=True, reuse=False, name='discr
     with tf.variable_scope(name, reuse=reuse):
         tl.layers.set_name_reuse(reuse)
 
-        patch_inputs = tf.random_crop(inputs, [1, 70, 70, 3])
-        net_in = InputLayer(patch_inputs, name='d/in')
+        # patch_inputs = tf.random_crop(inputs, [1, 70, 70, 3])
+        net_in = InputLayer(inputs, name='d/in')
         # 1st
         net_h0 = Conv2d(net_in, df_dim, (4, 4), (2, 2), act=lrelu,
                         padding='SAME', W_init=w_init, name='d/h0/conv2d')  # C64

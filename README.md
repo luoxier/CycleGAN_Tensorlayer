@@ -1,11 +1,14 @@
 # CycleGAN_Tensorlayer
-Re-implement CycleGAN in Tensorlayer
+Re-implement CycleGAN in TensorLayer
+
+- Original CycleGAN
+- Improved CycleGAN with resize-convolution
 
 
 
 ### Prerequisites:
 
-* Tensorlayer
+* TensorLayer
 * TensorFlow
 * Python
 

@@ -43,6 +43,7 @@ def read_images(img_list, path='', n_threads=10, printable=True):
         b_imgs_list = img_list[idx : idx + n_threads]
         b_imgs = prepro.threading_data(b_imgs_list, fn=read_image, path=path)
         # print(b_imgs.shape)
+        # exit()
         imgs.extend(b_imgs)
         if printable:
             print('read %d from %s' % (len(imgs), path))
