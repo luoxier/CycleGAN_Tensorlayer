@@ -6,7 +6,8 @@ import tensorlayer as tl
 from tensorlayer.layers import *
 from tensorlayer.prepro import *
 from random import shuffle
-from model_upsampling import *
+# from model_upsampling import *
+from model_deconv import *
 
 import argparse
 from collections import namedtuple
@@ -45,7 +46,7 @@ ni = int(np.sqrt(FLAGS.batch_size))
 
 def train_cyclegan():
     lamda = 10
-    num_fake = 0
+    # num_fake = 0
 
     ni = int(np.sqrt(FLAGS.batch_size))
     h, w = 256, 256
@@ -151,8 +152,8 @@ def train_cyclegan():
 
     dataA, dataB, im_test_A, im_test_B = tl.files.load_cyclegan_dataset(filename=FLAGS.dataset_dir, path='datasets')
 
-    sample_A = np.asarray(im_test_A[0: 16])
-    sample_B = np.asarray(im_test_B[0: 16])
+    sample_A = np.asarray(dataA[0: 16])
+    sample_B = np.asarray(dataB[0: 16])
     sample_A = tl.prepro.threading_data(sample_A, fn=rescale)
     sample_B = tl.prepro.threading_data(sample_B, fn=rescale)
 
@@ -194,7 +195,7 @@ def train_cyclegan():
                 % (epoch, FLAGS.epoch, idx, batch_idxs, time.time() - start_time, errDA, errDB, errGA2B, errGB2A))
 
             iter_counter += 1
-            num_fake += 1
+            # num_fake += 1
 
             if np.mod(iter_counter, 500) == 0:
                 oA, oB = sess.run([gen_A_out, gen_B_out],
