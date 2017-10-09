@@ -186,7 +186,7 @@ def train_cyclegan():
                                 feed_dict={real_A: batch_imgA, real_B: batch_imgB, fake_B_pool: gen_B_temp_out})
             ## update (backword) network
             _, errGB2A = sess.run([g_b2a_optim, g_b2a_loss],
-                                feed_dict={real_A: batch_imgB, real_B: batch_imgB})
+                                feed_dict={real_A: batch_imgA, real_B: batch_imgB})
             ## update DA network
             _, errDA = sess.run([d_a_optim, d_a_loss],
                                 feed_dict={real_A: batch_imgA, real_B: batch_imgB, fake_A_pool: gen_A_temp_out})
